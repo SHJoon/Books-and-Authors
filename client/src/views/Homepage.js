@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, navigate } from '@reach/router';
 import axios from 'axios';
 
+import AllAuthors from "../components/AllAuthors";
+
 const Homepage = () => {
     const [ authors, setAuthors ] = useState([]);
 
@@ -18,6 +20,7 @@ const Homepage = () => {
     return(
         <div>
             <Link to="/new">Add an author</Link>
+            <AllAuthors authors={authors} setAuthors={setAuthors} />
         </div>
     )
 }

@@ -10,6 +10,8 @@ function App() {
       <h1>Favorite authors</h1>
       <Router>
         <Homepage path="/" />
+        <New path="/new" />
+        <Edit path="/edit/:id" />
       </Router>
     </div>
   );
